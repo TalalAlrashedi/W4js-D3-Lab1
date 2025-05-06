@@ -69,3 +69,23 @@ saudiaAirlines.addDestination("لندن");
 console.log("----------------------------------");
 
 saudiaAirlines.getSummary();
+
+console.log("----------------------------------");
+
+//Arrow Functions
+
+const sum = (num, num2) => num + num2;
+
+console.log(sum(4, 5));
+
+const sub = (num, num2) => num - num2;
+
+console.log(sub(4, 7));
+
+const multy = (num, num2) => num * num2;
+
+console.log(multy(2, 4));
+
+const dived = (num, num2) => num / num2;
+
+console.log(dived(10, 2));
