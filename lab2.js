@@ -38,11 +38,6 @@ const characters = [
 
 // Challenge Questions:
 
-// 8. Sort by height (low to high).
-// 9. Does every character have a height greater than 100?
-// 10. Is every character lighter than 200?
-// 11. Is there at least one character with black eyes?
-// 12. Is there at least one character with a height of exactly 177?
 
 // 1. Get the first name of a character whose mass is more than 75.
 let massMore75 = characters.find((mass) => {
@@ -98,6 +93,33 @@ console.log("-----------------------------------------------");
 
 // 8. Sort by height (low to high).
 
-let sortHeights = characters.sort((a,b) => a.height - b.height)
+let sortHeights = characters.sort((a, b) => a.height - b.height);
 
 console.log(sortHeights);
+console.log("-----------------------------------------------");
+
+// 9. Does every character have a height greater than 100?
+
+let isHeightMore100 = characters.every((char) => char.height > 100);
+
+console.log(isHeightMore100);
+console.log("-----------------------------------------------");
+
+// 10. Is every character lighter than 200?
+
+let lighterChaMore200 = characters.every(char => char.mass > 200)
+
+console.log(lighterChaMore200);
+console.log("-----------------------------------------------");
+
+// 11. Is there at least one character with black eyes?
+
+let someBlackEye = characters.some(char => char.eye_color === "black")
+
+console.log(someBlackEye);
+
+// 12. Is there at least one character with a height of exactly 177?
+
+let heightExact177 = characters.some(char => char.height == 177)
+
+console.log(heightExact177);
